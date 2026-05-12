@@ -67,10 +67,6 @@ pipeline {
                     scp -o StrictHostKeyChecking=no \
                         docker-compose.yml \
                         ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
-
-                    scp -o StrictHostKeyChecking=no \
-                        .env \
-                        ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
                     '''
                 }
             }
