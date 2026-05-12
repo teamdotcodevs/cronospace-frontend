@@ -95,3 +95,6 @@ node_modules/
 
 # Compiled frontend assets
 dist/
+.playwright-mcp/
+digest.txt
+db.sqlite3

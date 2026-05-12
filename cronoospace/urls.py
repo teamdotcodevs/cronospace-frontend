@@ -1,5 +1,7 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from web.views import home, about, agent, crm, why_us, privacy, terms
 
 urlpatterns = [
@@ -12,3 +14,6 @@ urlpatterns = [
     path('privacy/', privacy, name='privacy'),
     path('terms/', terms, name='terms'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

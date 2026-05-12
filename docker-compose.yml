@@ -1,0 +1,16 @@
+services:
+  web:
+    image: ghcr.io/teamdotcodevs/cronospace/web:latest
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+    env_file:
+      - .env
+    ports:
+      - "8088:8000"
+    volumes:
+      - cronospace_sqlite_data:/app/data
+      - cronospace_static_data:/app/staticfiles
+volumes:
+  cronospace_sqlite_data:
+  cronospace_static_data:
