@@ -1,0 +1,750 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Cronomind AI Agent | Crono{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/agent.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero-main">
+     <div class="container">
+         <div class="hero-inner">
+             <div class="hero-badge">2026 AI Sales Infrastructure</div>
+             <h1 class="hero-title">Every Lead Is Valuable. <br> <span class="accent-text">Most Businesses Lose Them.</span></h1>
+             <p class="hero-subtitle">
+                 CRONO ensures every lead gets an instant response, intelligent conversation, and proper follow-up. All without increasing your team size.
+             </p>
+
+             <div class="hero-cta-group">
+                 <button class="btn-primary-glow" onclick="document.querySelector('.studio-cta').scrollIntoView({behavior: 'smooth'})">Book Free Demo</button>
+                 <button class="btn-secondary" onclick="window.open('https://wa.me/919446381587?text=Hi%20Crono%20Team,%20I%27d%20like%20to%20chat%20with%20an%20expert', '_blank')">
+                     <span>Chat with The Expert</span>
+                 </button>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <section class="trust-bar">
+     <div class="container">
+         <p>Trusted by growing businesses that want faster sales and better lead management.</p>
+         <div class="trust-logos">
+             <div class="logo-placeholder">SYSTEMS</div>
+             <div class="logo-placeholder">LOGIC</div>
+             <div class="logo-placeholder">AGENCY.CO</div>
+             <div class="logo-placeholder">SOLUTIONS</div>
+         </div>
+     </div>
+ </section>
+
+ <section class="system-audit-section">
+ <div class="container">
+
+     <div class="audit-block friction-grid">
+        <div class="audit-visual-main">
+ <div class="leakage-indicator">
+     <svg class="leak-icon" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+         <line x1="12" y1="9" x2="12" y2="13"></line>
+         <line x1="12" y1="17" x2="12.01" y2="17"></line>
+     </svg>
+     <span class="warning-text">REVENUE_LEAK_DETECTED</span>
+ </div>
+
+ <div class="graph-box loss-theme">
+     <div class="grid-line"></div>
+     <div class="grid-line"></div>
+     <div class="grid-line"></div>
+
+     <svg class="loss-svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+         <path d="M0,20 L50,30 L100,70 L150,85 L200,95 L200,100 L0,100 Z" fill="url(#lossGradient)" />
+         <path d="M0,20 L50,30 L100,70 L150,85 L200,95" fill="none" stroke="#ef4444" stroke-width="3" />
+
+         <defs>
+             <linearGradient id="lossGradient" x1="0" x2="0" y1="0" y2="1">
+                 <stop offset="0%" stop-color="#ef4444" stop-opacity="0.2" />
+                 <stop offset="100%" stop-color="#ef4444" stop-opacity="0" />
+             </linearGradient>
+         </defs>
+     </svg>
+
+     <div class="graph-label start">High Intent</div>
+     <div class="graph-label end">Lost Opportunity</div>
+ </div>
+</div>
+
+         <div class="audit-info">
+             <span class="blueprint-tag tag-danger">The Hidden Problem</span>
+             <h2 class="heavy-title">Most Businesses <br><span class="strike-black">Bleed Leads.</span></h2>
+             <div class="friction-cards">
+                 <div class="f-card">
+                     <div class="f-icon-svg">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                     </div>
+                     <strong>Slow Response</strong>
+                     <p>Interest dies in minutes. Teams can't keep up.</p>
+                 </div>
+                 <div class="f-card">
+                     <div class="f-icon-svg">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                     </div>
+                     <strong>Inconsistency</strong>
+                     <p>Follow-ups are forgotten. Serious buyers are lost.</p>
+                 </div>
+                    <div class="f-card">
+                     <div class="f-icon-svg">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                     </div>
+                     <strong>Miss conversations</strong>
+                     <p>Sales teams miss important conversations</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="audit-block engine-showcase">
+         <header class="engine-header">
+             <span class="blueprint-tag tag-success">The Engine</span>
+             <h2 class="heavy-title"> What <span style="color: #00d285;">CRONO</span>  <span class="mint-text">Actually Does.</span></h2>
+         </header>
+
+         <div class="capabilities-matrix">
+             <div class="matrix-item">
+                 <div class="m-icon-svg">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                 </div>
+                 <h4>Instant Pulse</h4>
+                 <p>Responds in seconds, not minutes.</p>
+             </div>
+             <div class="matrix-item">
+                 <div class="m-icon-svg">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                 </div>
+                 <h4>Intent Analysis</h4>
+                 <p>Understands the "Why" behind the lead.</p>
+             </div>
+             <div class="matrix-item">
+                 <div class="m-icon-svg">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                 </div>
+                 <h4>Data Ingestion</h4>
+                 <p>Collects vital details automatically.</p>
+             </div>
+             <div class="matrix-item">
+                 <div class="m-icon-svg">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                 </div>
+                 <h4>Buyer Logic</h4>
+                 <p>Filters serious buyers from browsers.</p>
+             </div>
+             <div class="matrix-item">
+                 <div class="m-icon-svg">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                 </div>
+                 <h4>Handoff Ready</h4>
+                 <p>Notifies your team when it's time to close.</p>
+             </div>
+             <div class="matrix-item">
+                 <div class="m-icon-svg">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                 </div>
+                 <h4>Revenue Focus</h4>
+                 <p>Stop replying, start closing.</p>
+             </div>
+         </div>
+     </div>
+
+     <div class="audit-block value-stack">
+         <div class="value-bento">
+             <div class="bento-box value-main">
+                 <h3>Immediate Value</h3>
+                 <p>Most businesses recovered cost within the <strong>first 5 conversions.</strong></p>
+                 <div class="value-list">
+                     <div class="v-li">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                         24/7 Response coverage
+                     </div>
+                     <div class="v-li">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                         Zero additional hiring costs
+                     </div>
+                     <div class="v-li">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                         Unified conversation hub
+                     </div>
+                 </div>
+             </div>
+             <div class="bento-box growth-fit">
+                 <h3>Designed for Growth</h3>
+                 <p>From 50 to 5,000 leads. We scale with your ad spend.</p>
+                 <button class="btn-blueprint" onclick="document.querySelector('.studio-cta').scrollIntoView({behavior: 'smooth'})">Build My Agent</button>
+             </div>
+         </div>
+     </div>
+
+ </div>
+</section>
+
+
+<section id="products" class="product-selector">
+ <div class="grid-overlay"></div>
+ <div class="container">
+     <header class="section-intro">
+         <div class="pill">CRONOSPACE OFFERS</div>
+         <h2 class="extra-bold">Which <span class="mint-text">Crono</span> fits your scale?</h2>
+         <p>Select the architecture that matches your business goals.</p>
+     </header>
+
+     <div class="product-grid">
+
+
+         <div class="product-card dark-version">
+             <div class="card-header">
+                 <span class="tag">AI Specialist</span>
+                 <h3>Crono Sales Agent</h3>
+             </div>
+             <div class="card-body">
+                 <p>For businesses that need raw power. A high-performance pre-sales agent equipped with a dedicated analytics dashboard.</p>
+                 <ul class="feat-list">
+                     <li><strong>✓</strong> Cronomind Sale Agent</li>
+                     <li><strong>✓</strong> Dedicated Analytics Dashboard</li>
+                     <li><strong>✓</strong> Instant Response Engine</li>
+                       <li><strong>✓</strong> Easy Integration with your CRM</li>
+                 </ul>
+             </div>
+             <a href="{% url 'agent' %}"><button class="btn-select-mint">Select Cronomind</button></a>
+
+         </div>
+
+           <div class="product-card">
+             <div class="card-header">
+                 <span class="tag">Full Suite</span>
+                 <h3>Crono AI-First CRM</h3>
+             </div>
+             <div class="card-body">
+                 <p>The ultimate backbone for your sales team. A fully-fledged CRM built from the ground up to work with our autonomous agents.</p>
+                 <ul class="feat-list">
+                     <li><strong>✓</strong> Fully Fledged CRM</li>
+                     <li><strong>✓</strong> Pre-Sales AI Agent</li>
+                     <li><strong>✓</strong> Full CRM Features</li>
+                     <li><strong>✓</strong> Cutomized As You Want</li>
+                 </ul>
+             </div>
+             <a href="{% url 'crm' %}">  <button class="btn-select">Select CRM Suite</button></a>
+
+         </div>
+     </div>
+ </div>
+</section>
+
+
+<section class="onboarding-staggered" id="onboarding-trigger">
+ <div class="container">
+     <header class="section-intro">
+         <div class="pill">System Workflow</div>
+         <h2 class="bold-title"><span class="black-text">Autonomous Revenue</span> <span class="mint-text">Generation.</span></h2>
+     </header>
+
+     <div class="path-container">
+         <svg class="svg-path" viewBox="0 0 100 1000" preserveAspectRatio="none">
+             <path d="M50,0 C80,250 20,750 50,1000" class="path-bg" />
+             <path d="M50,0 C80,250 20,750 50,1000" class="path-fill" id="scroll-path" />
+         </svg>
+
+         <div class="path-step highlight">
+             <div class="massive-num ">01</div>
+             <div class="step-info">
+                 <h3 class="extra-bold">Instant Multi-Platform Link</h3>
+                 <p>Connect with leads from every platform. Cronomind starts conversations in seconds, not minutes.</p>
+             </div>
+         </div>
+
+         <div class="path-step right ">
+             <div class="massive-num">02</div>
+             <div class="step-info">
+                 <h3 class="extra-bold">Advanced Lead Synthesis</h3>
+                 <p>Our agent understands emotion and budget. It qualifies leads with the precision of a top-tier sales pro.</p>
+             </div>
+         </div>
+
+         <div class="path-step">
+             <div class="massive-num">03</div>
+             <div class="step-info">
+                 <h3 class="extra-bold">Bespoke Sales Routing</h3>
+                 <p>The agent executes your flow: closing deals, booking meetings, or handing over to human closers.</p>
+             </div>
+         </div>
+
+         <div class="path-step right highlight">
+             <div class="massive-num">04</div>
+             <div class="step-info">
+                 <h3 class="extra-bold">Real-Time CRM Sync</h3>
+                 <p>Every interaction is logged. No lag, no glitches—just a perfectly updated pipeline.</p>
+             </div>
+         </div>
+     </div>
+ </div>
+</section>
+
+<section class="creative-feature-hub">
+ <div class="container">
+
+     <header class="hub-header">
+         <span class="rich-tag">Digital Ecosystem</span>
+         <h2 class="extra-bold-rich">Engineered for <br> <span class="mint-text">Revenue Operations.</span></h2>
+     </header>
+
+     <div class="rich-bento-layout">
+
+         <div class="p-card-neural">
+             <div class="neural-vis">
+                 <div class="neural-label">Neural Core v2.1</div>
+                 <svg class="icon-main-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-10l-1.4 1.4L12.2 13l-1.4 1.4 2.8 2.8L16 14.2 13.6 11.8 12 10z"></path></svg>
+             </div>
+             <h3>Advanced Sales Logic</h3>
+             <div class="neural-features">
+                 <div class="neural-item">
+                     <strong>Contextual Memory</strong>
+                     <p>The agent remembers previous touches. If a lead returns, Cronomind picks up exactly where things left off.</p>
+                 </div>
+                 <div class="neural-item">
+                     <strong>Objection Handling</strong>
+                     <p>Trained to navigate "too expensive" or "not right now" with persuasive, pre-approved brand logic.</p>
+                 </div>
+                 <div class="neural-item">
+                     <strong>Multi-Persona Support</strong>
+                     <p>Friendly Assistant or Direct Sales BDA? We tune the tone to your specific industry.</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="integration-cluster">
+
+             <div class="mini-cluster-card p-card-creative">
+                 <svg class="cluster-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h6v-2h-4V7z"></path></svg>
+                 <h4>Polyglot Mastery</h4>
+                 <p>English, Malayalam, Arabic, and 50+ others with native-level nuance.</p>
+             </div>
+
+             <div class="mini-cluster-card p-card-creative">
+                 <svg class="cluster-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                 <h4>Calendar Sync</h4>
+                 <p>Direct integration with Google/Outlook for zero-friction booking.</p>
+             </div>
+
+             <div class="mini-cluster-card p-card-creative">
+                 <svg class="cluster-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-11.5L10.5 7 12 5.5 13.5 7 12 8.5zm0 9.5l-1.5-1.5L12 15l1.5 1.5-1.5 1.5zM12 12l1.5 1.5-1.5 1.5-1.5-1.5L12 12zm0-4.5L10.5 9 12 10.5 13.5 9 12 7.5zM12 16.5L10.5 15l1.5-1.5 1.5 1.5-1.5 1.5z"></path></svg>
+                 <h4>Sentiment Shield</h4>
+                 <p>Detects angry or confused leads and alerts humans for intervention.</p>
+             </div>
+
+             <div class="mini-cluster-card p-card-creative">
+                 <svg class="cluster-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-10l-1.4 1.4L12.2 13l-1.4 1.4 2.8 2.8L16 14.2 13.6 11.8 12 10z"></path></svg>
+                 <h4>Voice-to-Text</h4>
+                 <p>Seamlessly handles WhatsApp voice notes, transcribing and replying.</p>
+             </div>
+         </div>
+     </div>
+
+     <div class="creative-banner p-card-dark">
+         <div class="banner-vis">
+             <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+         </div>
+         <div class="banner-info">
+             <h3>Bespoke Agent Training</h3>
+             <p>We feed your product catalogs, PDFs, and past successful chats into the agent. It doesn't just talk; it sells your specific value.</p>
+         </div>
+         <button class="btn-primary-rich" onclick="document.querySelector('.studio-cta').scrollIntoView({behavior: 'smooth'})">Build My Agent</button>
+     </div>
+ </div>
+</section>
+
+<section class="onboarding-engine">
+ <div class="container">
+     <header class="engine-header">
+         <div class="label-chip">Deployment Phase</div>
+         <h2 class="heavy-h">The <span class="mint-text">Architecture</span> Of Scale.</h2>
+         <p>A precision-engineered 4-stage deployment to synchronize Crono with your revenue goals.</p>
+     </header>
+
+     <div class="engine-grid">
+         <div class="engine-card">
+             <div class="card-top">
+                 <span class="phase-num">P_01</span>
+                 <span class="phase-tag">DISCOVERY</span>
+             </div>
+             <div class="card-mid">
+                 <h3>Logic Discovery</h3>
+                 <p>We analyze your sales flow and closing criteria to map out your custom logic.</p>
+             </div>
+             <div class="card-bottom">
+                 <span class="io-label">INPUT: Existing CRM Data</span>
+             </div>
+         </div>
+
+         <div class="engine-card">
+             <div class="card-top">
+                 <span class="phase-num">P_02</span>
+                 <span class="phase-tag">ENGINEERING</span>
+             </div>
+             <div class="card-mid">
+                 <h3>Bespoke Build</h3>
+                 <p>Our engineers configure your instance, stripping bloat and integrating API needs.</p>
+             </div>
+             <div class="card-bottom">
+                 <span class="io-label">INPUT: API Documentation</span>
+             </div>
+         </div>
+
+         <div class="engine-card featured-engine">
+             <div class="card-top">
+                 <span class="phase-num">P_03</span>
+                 <span class="phase-tag mint-txt">TRAINING</span>
+             </div>
+             <div class="card-mid">
+                 <h3>AI Training</h3>
+                 <p>We feed your business DNA into the core, training it on industry-specific nuances.</p>
+             </div>
+             <div class="card-bottom">
+                 <span class="io-label">INPUT: Product Catalogues</span>
+             </div>
+         </div>
+
+         <div class="engine-card">
+             <div class="card-top">
+                 <span class="phase-num">P_04</span>
+                 <span class="phase-tag">DEPLOY</span>
+             </div>
+             <div class="card-mid">
+                 <h3>Final Launch</h3>
+                 <p>Live testing and handoff. Your autonomous revenue engine is officially online.</p>
+             </div>
+             <div class="card-bottom">
+                 <span class="io-label">OUTPUT: Live Sales Agent</span>
+             </div>
+         </div>
+     </div>
+ </div>
+</section>
+
+
+   <section id="price" class="pricing-master-wrapper">
+
+     <div class="pricing-block v1-impact-section">
+         <div class="v1-background-layer"></div>
+         <div class="container">
+             <header class="block-header">
+                 <h2 class="extra-bold-v1">Engineered for <br> <span class="impact-stroke">Reliability.</span></h2>
+                 <div class="pill-outline-v1">CRONO V1</div>
+             </header>
+
+
+             <div class="dual-card-grid">
+                 <div class="p-card-v1">
+                     <div class="card-status"><span class="dot"></span> SYSTEM V1.0</div>
+                     <div class="p-head">
+                         <h3 style="color: #00d285;">Business Pack</h3>
+                         <div class="price">₹5,999<span>/mo</span></div>
+                     </div>
+                     <ul class="p-list">
+                         <li><strong>10,000</strong> Messages /mo</li>
+                         <li>1 Languages Support</li>
+                         <li>Text Support Only</li>
+                         <li>Catalogue Management</li>
+                     </ul>
+                     <button class="btn-impact-v1">Initialize Business</button>
+                 </div>
+
+                 <div class="p-card-v1 featured-v1">
+                     <div class="card-status"><span class="dot pulse"></span> ENTERPRISE V1.0</div>
+                     <div class="p-head">
+                         <h3 style="color: #00d285;">Grand Pack</h3>
+                         <div class="price">₹14,999<span>/mo</span></div>
+                     </div>
+                     <ul class="p-list">
+                         <li><strong>25,000</strong> Messages /mo</li>
+                         <li>3 Languages Supported</li>
+                         <li>Advanced AI Dashboard</li>
+                         <li>Advanced Pipeline Features</li>
+                     </ul>
+                     <button class="btn-impact-v1 dark-btn">Initialize Grand</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="pricing-block v2-bg">
+         <div class="container">
+             <header class="block-header">
+                 <span class="version-tag-v2">Crono V2 : NextGen</span>
+                 <h2 class="extra-bold-v2">Neural <span class="mint-text">Growth Engines.</span></h2>
+             </header>
+
+             <div class="dual-card-grid">
+                 <div class="p-card-v3 v2-style featured-v2">
+                     <div class="float-badge">Most Popular</div>
+                     <div class="p-head">
+                         <h3>Growth V2</h3>
+                         <div class="price">₹7,999<span>/mo</span></div>
+                     </div>
+                     <ul class="p-list">
+                         <li><strong>10,000</strong> AI Conversations</li>
+                         <li>Advanced Workflow Automation</li>
+                         <li>Team Inbox Access</li>
+                         <li>Dynamic Dashboard</li>
+                         <li>Instant AI Follow-ups</li>
+                         <li>2 Languages Supported</li>
+
+                     </ul>
+                     <button class="btn-mint-v3">Deploy V2 Growth</button>
+                 </div>
+
+                 <div class="p-card-v3 v2-style pro-v2">
+                     <div class="float-badge dark-badge">Founders Favourite</div>
+                     <div class="p-head">
+                         <h3>Professional V2</h3>
+                         <div class="price">₹12,999<span>/mo</span></div>
+                     </div>
+                     <ul class="p-list">
+                         <li><strong>30,000</strong> AI Conversations</li>
+                         <li>4 Channels / 3 Accounts</li>
+                         <li>Auto-detect 3 Languages</li>
+                         <li>Workflow Dev Support</li>
+                         <li>Priority Neural Processing</li>
+                     </ul>
+                     <button class="btn-white-v3">Deploy V2 Pro</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+   </section>
+
+
+<section class="testimonials">
+ <div class="container">
+     <div class="section-header">
+         <div class="pill">Client Success Stories</div>
+         <h2 class="ultra-bold">What our <span class="mint-text">clients say</span></h2>
+         <p class="section-sub">Real results from real businesses using Crono AI</p>
+     </div>
+
+     <div class="testimonials-wrapper">
+         <div class="testimonials-grid">
+             <div class="testimonial-page" data-page="1">
+                 <div class="testimonial-card">
+                     <div class="quote-icon">
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                         </svg>
+                     </div>
+                     <div class="testimonial-content">
+                         <p class="testimonial-text">"Crono CRM helped us automate our entire lead management process with AI. Faster responses, better conversions, and less manual work."</p>
+                         <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                         <div class="testimonial-author">
+                             <div class="author-info">
+                                 <div class="author-avatar">
+                                     <img src="{% static 'images/rameessir.png' %}" alt=" Ramees Ali, Entrepreneur">
+                                 </div>
+                                 <div class="author-details">
+                                     <h4> Ramees Ali</h4>
+                                     <div class="rating">
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                     </div>
+                                     <p>Entrepreneur</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="testimonial-card">
+                     <div class="quote-icon">
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                         </svg>
+                     </div>
+                     <div class="testimonial-content">
+                         <p class="testimonial-text">"Most CRMs only manage leads and customer data. But Crono CRM feels different,  its Sales Stimulating Engine keeps our team motivated, engaged, and focused on achieving targets every day."</p>
+                         <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                         <div class="testimonial-author">
+                             <div class="author-info">
+                                 <div class="author-avatar">
+                                     <img src="{% static 'images/Raghav.png' %}" alt="Rahul Raghav,">
+                                 </div>
+                                 <div class="author-details">
+                                     <h4>Rahul Raghav</h4>
+                                     <div class="rating">
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                     </div>
+                                     <p>Business Operations Architect</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="testimonial-card">
+                     <div class="quote-icon">
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                         </svg>
+                     </div>
+                     <div class="testimonial-content">
+                         <p class="testimonial-text">"There are many CRMs available today, but I wanted a system built specifically for my business needs. Team Crono created a customized AI-first CRM for us, and the results have been incredible, we've seen 30% more quality leads and nearly 20% higher conversions."</p>
+                         <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                         <div class="testimonial-author">
+                             <div class="author-info">
+                                 <div class="author-avatar">
+                                     <img src="{% static 'images/Insha.png' %}" alt=" Insha Abin">
+                                 </div>
+                                 <div class="author-details">
+                                     <h4>Insha Abin</h4>
+                                     <div class="rating">
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                     </div>
+                                     <p>Entrepreneur</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="testimonial-page" data-page="2">
+                 <div class="testimonial-card">
+                     <div class="quote-icon">
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                         </svg>
+                     </div>
+                     <div class="testimonial-content">
+                         <p class="testimonial-text">"Managing clients was one of the most difficult parts of running my practice. Crono CRM built a customized AI-first client management system for my firm, and now the AI handles the management side smoothly so I can focus more on my clients and business."</p>
+                         <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                         <div class="testimonial-author">
+                             <div class="author-info">
+                                 <div class="author-avatar">
+                                     <img src="{% static 'images/Henna.png' %}" alt="Dr. Henna Ayoob,">
+                                 </div>
+                                 <div class="author-details">
+                                     <h4>Dr. Henna Ayoob</h4>
+                                     <div class="rating">
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                     </div>
+                                     <p>Psychologist</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="testimonial-card">
+                     <div class="quote-icon">
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                         </svg>
+                     </div>
+                     <div class="testimonial-content">
+                         <p class="testimonial-text">"I've used many CRMs in my career, but Crono CRM stands out with its AI-driven lead engagement and team motivation system. Their service and support are also a major plus for our business."</p>
+                         <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                         <div class="testimonial-author">
+                             <div class="author-info">
+                                 <div class="author-avatar">
+                                     <img src="{% static 'images/rasha.png' %}" alt="Rashana P P">
+                                 </div>
+                                 <div class="author-details">
+                                     <h4>Rashana P P</h4>
+                                     <div class="rating">
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                     </div>
+                                     <p>Sales growth manager</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="testimonial-card">
+                     <div class="quote-icon">
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                         </svg>
+                     </div>
+                     <div class="testimonial-content">
+                         <p class="testimonial-text">"Our team productivity has skyrocketed. We're closing 3x more deals with the same headcount thanks to Crono AI."</p>
+                         <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                         <div class="testimonial-author">
+                             <div class="author-info">
+                                 <div class="author-avatar">
+                                     <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face&auto=format" alt="James Wilson">
+                                 </div>
+                                 <div class="author-details">
+                                     <h4>James Wilson</h4>
+                                     <div class="rating">
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                         <span class="star">★</span>
+                                     </div>
+                                     <p>Sales Manager, ScaleUp</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <div class="testimonials-pagination">
+             <button class="pagination-dot active" data-page="1"></button>
+             <button class="pagination-dot" data-page="2"></button>
+         </div>
+     </div>
+ </div>
+</section>
+
+<section class="studio-cta">
+ <div class="grid-overlay"></div>
+ <div class="container">
+     <div class="cta-content">
+         <div class="pill">Start Your Journey</div>
+         <h2 class="ultra-bold">Ready to meet your <br> <span class="mint-text">next <span style="color: #00d285;">top performer?</span></span></h2>
+         <p class="cta-sub">Crono is ready to deploy. Connect with our team to see the crono in action.</p>
+
+         <div class="action-row">
+             <button class="btn-demo-white" onclick="toggleModal(true)">Book a Demo</button>
+             <div class="divider-v"></div>
+              <a href="https://wa.me/919446381587?text=Hi%20Crono%20Team,%20I'd%20like%20to%20learn%20more%20about%20your%20AI%20solutions." class="whatsapp-link">
+                 <span class="wa-icon">
+                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.408 0 12.044c0 2.123.554 4.197 1.604 6.04L0 24l6.112-1.608a11.845 11.845 0 005.934 1.586h.005c6.635 0 12.046-5.409 12.05-12.046a11.808 11.808 0 00-3.535-8.423z"/></svg>
+                 </span>
+                 Connect With Our Expert
+             </a>
+         </div>
+     </div>
+ </div>
+</section>
+{% endblock %}

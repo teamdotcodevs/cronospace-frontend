@@ -1,0 +1,338 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About | Cronospace - Autonomous Engineering{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+  <section class="hero-landing">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-icon">✨</span>
+          <span class="badge-text">AI-Powered Sales Revolution</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line">Automating </span>
+          <span class="title-line">  Your Pipeline </span>
+          <span class="title-highlight"> With Crono</span>
+        </h1>
+
+        <p class="hero-description">
+          Experience the future of CRM with Crono's AI-first platform. Automate lead engagement,
+          qualify prospects instantly, and accelerate your sales cycle while maintaining
+          personalized customer interactions at scale.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="toggleModal(true)">Book Free Demo</button>
+          <button class="btn-secondary" onclick="window.open('https://wa.me/919446381587?text=Hi%20Crono%20Team,%20I%27d%20like%20to%20chat%20with%20an%20expert', '_blank')">
+            <span>Chat with The Expert</span>
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">10x</div>
+            <div class="stat-label">Faster Response</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">85%</div>
+            <div class="stat-label">Lead Qualification</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">AI Availability</div>
+          </div>
+        </div>
+
+        <div class="trust-indicators">
+          <div class="trust-text">Trusted by leading companies worldwide</div>
+          <div class="trust-logos">
+            <div class="logo-placeholder">TechCorp</div>
+            <div class="logo-placeholder">SalesPro</div>
+            <div class="logo-placeholder">AI Solutions</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="dashboard-preview">
+          <div class="dashboard-header">
+            <div class="dashboard-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="dashboard-title">Crono AI Dashboard</div>
+          </div>
+          <div class="dashboard-content">
+            <div class="metric-card">
+              <div class="metric-value">$2.4M</div>
+              <div class="metric-label">Pipeline Value</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">342</div>
+              <div class="metric-label">Active Leads</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">89%</div>
+              <div class="metric-label">Conversion Rate</div>
+            </div>
+          </div>
+          <div class="ai-assistant">
+            <div class="assistant-avatar">🤖</div>
+            <div class="assistant-message">
+              <div class="typing-indicator">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="corporate-anchor">
+    <div class="container">
+      <div class="anchor-grid">
+        <div class="grid-col col-logo">
+          <div class="impact-logo-frame">
+            <img
+              src="{% static 'images/dotcologo lighttheme.png' %}"
+              alt="Crono"
+              class="studio-logo-img"
+            />
+            <div class="frame-decor"></div>
+          </div>
+        </div>
+        <div class="anchor-card">
+          <div class="card-pill">PARENT_ENTITY</div>
+          <h2>Powered by <br />Dotco Nextgen.</h2>
+          <p>
+           Crono is an AI first CRM and Presales Automation platform developed to help modern businesses manage, engage, and convert leads more intelligently. Unlike traditional CRM systems that only store customer data, Crono combines advanced AI technology with automation to streamline lead engagement, client management, sales operations, and team performance within a single ecosystem.
+           At the core of the platform is the Crono Presales AI Agent, an intelligent AI driven system designed to automate lead interaction, qualification, follow ups, and customer engagement processes. This enables businesses to respond faster, improve conversion rates, and reduce manual workload while maintaining a personalized customer experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="anchor-grid">
+        <div class="grid-col col-logo">
+          <div class="impact-logo-frame">
+            <img
+              src="{% static 'images/dotcologo lighttheme.png' %}"
+              alt="Crono"
+              class="studio-logo-img"
+            />
+            <div class="frame-decor"></div>
+            <div class="corner-status">NODE_STABLE</div>
+          </div>
+        </div>
+        <div class="anchor-card">
+          <div class="card-pill">PARENT_ENTITY</div>
+          <h2>Powered by <br />Dotco Nextgen.</h2>
+          <p>
+           Crono is a product of Prospello Technology, a technology driven company focused on building innovative AI and business automation solutions for the next generation of enterprises and startups.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="flagship-audit-v2">
+    <div class="container">
+      <div class="audit-header-v2">
+        <div class="header-left">
+          <h2 class="display-title-v3">
+            Flagship <br /><span class="mint-text">Infrastructure.</span>
+          </h2>
+        </div>
+        <div class="header-right">
+          <p>
+            Deploying autonomous intelligence across the business spectrum.
+          </p>
+        </div>
+      </div>
+
+      <div class="audit-portal-grid">
+        <div class="portal-card">
+          <div class="portal-meta">
+            <span class="serial">ENG_01</span>
+            <span class="status-pulse">ACTIVE_UPLINK</span>
+          </div>
+
+          <div class="portal-content">
+            <h3>CRNO Pre-Sale <br />Agent</h3>
+            <p>
+              The industry's first autonomous negotiator. A neural-trained
+              asset designed to qualify and close leads via deep-intent
+              mapping.
+            </p>
+          </div>
+
+          <div class="portal-action">
+            <a href="#" class="btn-node-link">
+              <span class="link-text">Initialize Asset</span>
+              <div class="link-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="portal-card featured-portal">
+          <div class="portal-meta">
+            <span class="serial">ENG_02</span>
+            <span class="status-pulse">STABLE_BUILD</span>
+          </div>
+
+          <div class="portal-content">
+            <h3>CRNO AI-First <br />CRM</h3>
+            <p>
+              The centralized brain of your business. Native AI integration
+              that replaces manual data entry with autonomous workflows.
+            </p>
+          </div>
+
+          <div class="portal-action">
+            <a href="#" class="btn-node-link">
+              <span class="link-text">Sync Infrastructure</span>
+              <div class="link-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin-story-v2">
+    <div class="container">
+      <div class="origin-grid-v2">
+        <div class="origin-content-v2">
+          <div class="pill-label">REGIONAL_NODES</div>
+          <h2 class="display-heavy">
+            Architected <br />Across the
+            <span class="mint-text">Silicon Coast.</span>
+          </h2>
+          <p class="origin-desc">
+            Our team of professional marketing strategists and brilliant
+            engineers operates from a decentralized network of high-tech
+            hubs. We combine <strong>Bangalore's tech-scale</strong> with
+            the <strong>precision engineering</strong> of Kozhikode and
+            Areekode.
+          </p>
+        </div>
+
+        <div class="hub-list-v2">
+          <div class="hub-item">
+            <div class="hub-info">
+              <span class="hub-city">London</span>
+              <span class="hub-tag">TECH_HQ</span>
+            </div>
+            <div class="hub-meta">
+              Bizniz Point, Broadway, Stratford London
+            </div>
+            <div class="hub-meta">United Kingdom</div>
+          </div>
+
+          <div class="hub-item">
+            <div class="hub-info">
+              <span class="hub-city">Bangalore</span>
+              <span class="hub-tag">ENGINEERING_CORE</span>
+            </div>
+            <div class="hub-meta">Sector 3, HSR Layout,</div>
+            <div class="hub-meta">Bangalore, India</div>
+          </div>
+
+          <div class="hub-item active-hub">
+            <div class="hub-info">
+              <span class="hub-city">Kerala</span>
+              <span class="hub-tag">STRATEGY_LAB</span>
+            </div>
+            <div class="hub-meta">Hilite Business park,calicut</div>
+            <div class="hub-meta">Kerala, India.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="studio-cta">
+  <div class="grid-overlay"></div>
+  <div class="container">
+    <div class="cta-content">
+      <div class="pill">Start Your Journey</div>
+      <h2 class="ultra-bold">
+        Ready to meet your <br />
+        <span class="mint-text"
+          >next <span style="color: #00d285">top performer?</span></span
+        >
+      </h2>
+      <p class="cta-sub">
+        Crono is ready to deploy. Connect with our team to see the crono in
+        action.
+      </p>
+
+      <div class="action-row">
+        <button class="btn-demo-white" onclick="toggleModal(true)">
+          Book a Demo
+        </button>
+        <div class="divider-v"></div>
+        <a
+          href="https://wa.me/919446381587?text=Hi%20Crono%20Team,%20I'd%20like%20to%20learn%20more%20about%20your%20AI%20solutions."
+          class="whatsapp-link"
+        >
+          <span class="wa-icon">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.408 0 12.044c0 2.123.554 4.197 1.604 6.04L0 24l6.112-1.608a11.845 11.845 0 005.934 1.586h.005c6.635 0 12.046-5.409 12.05-12.046a11.808 11.808 0 00-3.535-8.423z"
+              />
+            </svg>
+          </span>
+          Connect With Our Expert
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

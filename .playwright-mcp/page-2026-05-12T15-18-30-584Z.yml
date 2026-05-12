@@ -1,0 +1,195 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Talens" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Talens" [ref=e5]
+      - generic [ref=e6]:
+        - link "About Us" [ref=e7] [cursor=pointer]:
+          - /url: /about/
+        - link "Contact Us" [ref=e8] [cursor=pointer]:
+          - /url: /contact/
+        - button "Resources" [ref=e10] [cursor=pointer]:
+          - text: Resources
+          - img [ref=e11]
+      - link "Are you an organization?" [ref=e14] [cursor=pointer]:
+        - /url: /registration/?form=group
+  - generic [ref=e15]:
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e21]: Discover your true potential
+          - heading "Unlock Your Future Career" [level=1] [ref=e22]:
+            - text: Unlock Your
+            - text: Future Career
+          - paragraph [ref=e23]: Talens combines cutting-edge psychometric evaluation with personalized guidance to help you chart your perfect path forward.
+          - generic [ref=e24]:
+            - link "Start Test" [ref=e25] [cursor=pointer]:
+              - /url: /registration/
+              - text: Start Test
+              - img [ref=e26]
+            - button "Learn More" [ref=e28] [cursor=pointer]
+        - generic [ref=e30]:
+          - img "Talens Hero" [ref=e34]
+          - generic [ref=e36]:
+            - img [ref=e38]
+            - generic [ref=e40]:
+              - paragraph [ref=e41]: Status
+              - paragraph [ref=e42]: Verified
+          - generic [ref=e44]:
+            - img [ref=e46]
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: Potential
+              - paragraph [ref=e50]: Unlimited
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: 5000+
+          - generic [ref=e54]: Students Assessed
+        - generic [ref=e55]:
+          - generic [ref=e56]: 50+
+          - generic [ref=e57]: Partner Schools
+        - generic [ref=e58]:
+          - generic [ref=e59]: 98%
+          - generic [ref=e60]: Satisfaction Rate
+        - generic [ref=e61]:
+          - generic [ref=e62]: 24/7
+          - generic [ref=e63]: Expert Support
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - heading "Everything you need to succeed" [level=2] [ref=e66]
+          - paragraph [ref=e67]: Comprehensive tools and insights designed to help you make the best decisions for your future.
+        - generic [ref=e68]:
+          - generic [ref=e70]:
+            - img [ref=e72]
+            - heading "Psychometric Evaluation" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Our advanced assessment system analyzes your cognitive abilities, personality traits, and interests to build a comprehensive profile of your unique potential.
+          - generic [ref=e76]:
+            - img [ref=e78]
+            - heading "Career Clarity" [level=3] [ref=e80]
+            - paragraph [ref=e81]: Get clear, actionable insights into career paths that align with your natural strengths.
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - img [ref=e85]
+              - heading "Personalized Learning Path" [level=3] [ref=e86]
+              - paragraph [ref=e87]: We don't just tell you what you're good at; we show you how to get there. Receive a customized roadmap for your academic and professional journey.
+            - img [ref=e90]
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - heading "How Talens Works" [level=2] [ref=e157]
+          - paragraph [ref=e158]: Four simple steps to discover your potential.
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - generic [ref=e161]: "1"
+            - heading "Register" [level=3] [ref=e162]
+            - paragraph [ref=e163]: Sign up and create your student profile to get started.
+          - generic [ref=e165]:
+            - generic [ref=e166]: "2"
+            - heading "Take Assessment" [level=3] [ref=e167]
+            - paragraph [ref=e168]: Complete engaging games and quizzes designed to test your skills.
+          - generic [ref=e170]:
+            - generic [ref=e171]: "3"
+            - heading "View Report" [level=3] [ref=e172]
+            - paragraph [ref=e173]: Get a detailed analysis of your strengths and areas for improvement.
+          - generic [ref=e175]:
+            - generic [ref=e176]: "4"
+            - heading "Succeed" [level=3] [ref=e177]
+            - paragraph [ref=e178]: Use the insights to plan your career and achieve your goals.
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - img "Happy Students" [ref=e183]
+          - generic [ref=e184]:
+            - generic [ref=e185]: Confidence
+            - heading "Build Unshakeable Confidence" [level=3] [ref=e187]
+            - paragraph [ref=e188]: Knowing your strengths is the first step to success. Our assessment helps you understand what makes you unique, giving you the confidence to pursue your dreams with clarity and purpose.
+            - list [ref=e189]:
+              - listitem [ref=e190]:
+                - img [ref=e191]
+                - text: Identify your core strengths
+              - listitem [ref=e193]:
+                - img [ref=e194]
+                - text: Overcome self-doubt
+        - generic [ref=e196]:
+          - img "Students Collaborating" [ref=e199]
+          - generic [ref=e200]:
+            - generic [ref=e201]: Growth
+            - heading "Growth Through Understanding" [level=3] [ref=e203]
+            - paragraph [ref=e204]: Education is not just about grades; it's about growth. Talens provides actionable insights that help you focus your efforts where they matter most, fostering a growth mindset that lasts a lifetime.
+            - list [ref=e205]:
+              - listitem [ref=e206]:
+                - img [ref=e207]
+                - text: Personalized learning strategies
+              - listitem [ref=e209]:
+                - img [ref=e210]
+                - text: Continuous improvement tracking
+        - generic [ref=e212]:
+          - img "Joyful Education" [ref=e215]
+          - generic [ref=e216]:
+            - generic [ref=e217]: Joy
+            - heading "Find Joy in Learning" [level=3] [ref=e219]
+            - paragraph [ref=e220]: When you align your career path with your natural interests, learning becomes a joy, not a chore. Discover what lights you up and pursue it with passion.
+            - list [ref=e221]:
+              - listitem [ref=e222]:
+                - img [ref=e223]
+                - text: Connect passion with purpose
+              - listitem [ref=e225]:
+                - img [ref=e226]
+                - text: Make informed career choices
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - heading "Student Success Stories" [level=2] [ref=e230]
+          - paragraph [ref=e231]: Hear from students who have found their path with Talens.
+        - generic [ref=e232]:
+          - generic [ref=e233]:
+            - generic [ref=e234]:
+              - img "Student" [ref=e235]
+              - generic [ref=e236]:
+                - heading "Alex Thompson" [level=4] [ref=e237]
+                - paragraph [ref=e238]: High School Senior
+            - paragraph [ref=e239]: "\"Talens opened my eyes to careers I hadn't considered. The games were fun, and the report was spot on!\""
+            - generic [ref=e240]: ★★★★★
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - img "Student" [ref=e243]
+              - generic [ref=e244]:
+                - heading "Sarah Jenkins" [level=4] [ref=e245]
+                - paragraph [ref=e246]: College Freshman
+            - paragraph [ref=e247]: "\"I was confused about my major, but the assessment helped me clarify my strengths. Highly recommend!\""
+            - generic [ref=e248]: ★★★★★
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - img "Student" [ref=e251]
+              - generic [ref=e252]:
+                - heading "Michael Chen" [level=4] [ref=e253]
+                - paragraph [ref=e254]: Grade 10 Student
+            - paragraph [ref=e255]: "\"The detailed report gave me confidence in my choices. It's a great tool for any student.\""
+            - generic [ref=e256]: ★★★★★
+      - generic [ref=e257]:
+        - generic [ref=e258]:
+          - heading "Frequently Asked Questions" [level=2] [ref=e259]
+          - paragraph [ref=e260]: Common questions about the Talens assessment platform.
+        - generic [ref=e261]:
+          - group [ref=e262] [cursor=pointer]:
+            - generic "What age group is Talens for?" [ref=e263]:
+              - text: What age group is Talens for?
+              - img [ref=e265]
+          - group [ref=e267] [cursor=pointer]:
+            - generic "How long does the assessment take?" [ref=e268]:
+              - text: How long does the assessment take?
+              - img [ref=e270]
+          - group [ref=e272] [cursor=pointer]:
+            - generic "Can I retake the test?" [ref=e273]:
+              - text: Can I retake the test?
+              - img [ref=e275]
+      - generic [ref=e279]:
+        - heading "Ready to Discover Your Potential?" [level=2] [ref=e280]
+        - paragraph [ref=e281]: Join thousands of students who have found their path with Talens. Start your journey today.
+        - link "Get Started Now" [ref=e282] [cursor=pointer]:
+          - /url: /registration/
+          - text: Get Started Now
+          - img [ref=e283]
+    - contentinfo [ref=e285]:
+      - generic [ref=e287]:
+        - generic [ref=e288]:
+          - img "Talens Logo" [ref=e289]
+          - generic [ref=e290]: Talens
+        - paragraph [ref=e291]: © 2024 Talens. All rights reserved.

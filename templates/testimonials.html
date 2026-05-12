@@ -1,0 +1,203 @@
+{% load static %}
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <div class="pill">Client Success Stories</div>
+            <h2 class="ultra-bold">What our <span class="mint-text">clients say</span></h2>
+            <p class="section-sub">Real results from real businesses using Crono AI</p>
+        </div>
+
+        <div class="testimonials-wrapper">
+            <div class="testimonials-grid">
+                <div class="testimonial-page" data-page="1">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Crono CRM helped us automate our entire lead management process with AI. Faster responses, better conversions, and less manual work."</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <img src="{% static 'images/rameessir.png' %}" alt=" Ramees Ali, Entrepreneur">
+                                    </div>
+                                    <div class="author-details">
+                                        <h4> Ramees Ali</h4>
+                                        <div class="rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p>Entrepreneur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Most CRMs only manage leads and customer data. But Crono CRM feels different,  its Sales Stimulating Engine keeps our team motivated, engaged, and focused on achieving targets every day."</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <img src="{% static 'images/Raghav.png' %}" alt="Rahul Raghav,">
+                                    </div>
+                                    <div class="author-details">
+                                        <h4>Rahul Raghav</h4>
+                                        <div class="rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p>Business Operations Architect</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"There are many CRMs available today, but I wanted a system built specifically for my business needs. Team Crono created a customized AI-first CRM for us, and the results have been incredible, we've seen 30% more quality leads and nearly 20% higher conversions."</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <img src="{% static 'images/Insha.png' %}" alt=" Insha Abin">
+                                    </div>
+                                    <div class="author-details">
+                                        <h4>Insha Abin</h4>
+                                        <div class="rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p>Entrepreneur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-page" data-page="2">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Managing clients was one of the most difficult parts of running my practice. Crono CRM built a customized AI-first client management system for my firm, and now the AI handles the management side smoothly so I can focus more on my clients and business."</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <img src="{% static 'images/Henna.png' %}" alt="Dr. Henna Ayoob,">
+                                    </div>
+                                    <div class="author-details">
+                                        <h4>Dr. Henna Ayoob</h4>
+                                        <div class="rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p>Psychologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"I've used many CRMs in my career, but Crono CRM stands out with its AI-driven lead engagement and team motivation system. Their service and support are also a major plus for our business."</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <img src="{% static 'images/rasha.png' %}" alt="Rashana P P">
+                                    </div>
+                                    <div class="author-details">
+                                        <h4>Rashana P P</h4>
+                                        <div class="rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p>Sales growth manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#00d285" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Our team productivity has skyrocketed. We're closing 3x more deals with the same headcount thanks to Crono AI."</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face&auto=format" alt="James Wilson">
+                                    </div>
+                                    <div class="author-details">
+                                        <h4>James Wilson</h4>
+                                        <div class="rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p>Sales Manager, ScaleUp</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-pagination">
+                <button class="pagination-dot active" data-page="1"></button>
+                <button class="pagination-dot" data-page="2"></button>
+            </div>
+        </div>
+    </div>
+</section>

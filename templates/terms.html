@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Terms of Service | Cronospace OS{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'css/terms.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <header class="terms-hero">
+        <div class="container">
+            <div class="meta-label">LEGAL_INFRASTRUCTURE // 2026</div>
+            <h1 class="display-heavy">Terms of <br><span class="mint-text">Service.</span></h1>
+            <p class="terms-intro">
+                This document governs the deployment and utilization of the Cronospace autonomous ecosystem. By initializing our assets, you agree to these <strong>Service Level Protocols</strong>.
+            </p>
+        </div>
+    </header>
+
+    <section class="terms-modules">
+        <div class="container">
+
+            <div class="terms-card">
+                <div class="terms-id">01 // PROVISION</div>
+                <h3>Service Deployment</h3>
+                <p>Cronospace (a division of <strong>Dotco Nextgen Solution Pvt Ltd</strong>) provides AI-driven business automation, including the CRNO Pre-Sale Agent and AI-First CRM. We reserve the right to modify system architecture to maintain neural efficiency.</p>
+            </div>
+
+            <div class="terms-card">
+                <div class="terms-id">02 // OWNERSHIP</div>
+                <h3>Neural IP Rights</h3>
+                <p>All proprietary algorithms, neural training models, and software code remain the exclusive intellectual property of Cronospace. Clients are granted a non-transferable license to utilize these nodes within their own business sectors.</p>
+            </div>
+
+            <div class="terms-card">
+                <div class="terms-id">03 // COMPLIANCE</div>
+                <h3>System Usage Logic</h3>
+                <p>Users must not utilize our autonomous agents for spamming, unethical data scraping, or any activity that violates regional laws in Bangalore, Kerala, or international jurisdictions. Abuse of the uplink will lead to immediate node termination.</p>
+            </div>
+
+            <div class="terms-card">
+                <div class="terms-id">04 // RISK_SYNC</div>
+                <h3>Liability Architecture</h3>
+                <p>While our engineering is designed for 99.9% precision, Cronospace is not liable for indirect data loss or revenue fluctuations resulting from autonomous decision-making in the CRM or Pre-Sale environments.</p>
+            </div>
+
+            <div class="terms-card">
+                <div class="terms-id">05 // OFFLINE</div>
+                <h3>Uplink Termination</h3>
+                <p>Either party may terminate the service agreement with 30-day notice. Upon termination, all active AI nodes will be de-initialized, and final data archives will be handed over to the client.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="governance-footer">
+        <div class="container">
+            <div class="gov-box">
+                <p>These terms are governed by the laws of India, with legal jurisdiction centered at our hubs in <strong>Kozhikode and Bangalore</strong>.</p>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

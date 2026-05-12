@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Privacy Protocol | Cronospace{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'css/privacy.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <header class="privacy-hero">
+        <div class="container">
+            <div class="meta-label">SECURITY_DEPT // v1.0</div>
+            <h1 class="display-heavy">Privacy <br><span class="mint-text">Protocol.</span></h1>
+            <p class="privacy-intro">
+                At Cronospace, we engineer trust. This protocol outlines how <strong>Dotco Nextgen Solution Pvt Ltd</strong> handles data across our autonomous ecosystems.
+            </p>
+        </div>
+    </header>
+
+    <section class="protocol-grid">
+        <div class="container">
+
+            <div class="protocol-item">
+                <div class="item-id">01 // COLLECTION</div>
+                <h3>Data Ingestion</h3>
+                <p>We collect essential information required to architect your automation, including contact details, business DNA for AI training, and technical logs. We never ingest data beyond the scope of operational necessity.</p>
+            </div>
+
+            <div class="protocol-item">
+                <div class="item-id">02 // ARCHITECTURE</div>
+                <h3>System Usage</h3>
+                <p>Your data is used to synchronize the <strong>CRNO Pre-Sale Agent</strong> and <strong>AI-First CRM</strong> with your specific business logic. This ensures a frictionless neural flow across your sales sectors.</p>
+            </div>
+
+            <div class="protocol-item">
+                <div class="item-id">03 // NODES</div>
+                <h3>External Uplinks</h3>
+                <p>We do not sell data to third-party brokers. Data is only shared with verified infrastructure partners (Google Cloud, WhatsApp API, Meta) required for system deployment.</p>
+            </div>
+
+            <div class="protocol-item">
+                <div class="item-id">04 // CONTROL</div>
+                <h3>Your Authority</h3>
+                <p>You maintain full sovereignty over your business data. At any point, you may request a complete wipe of your neural training models and CRM database from our servers.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="security-contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="pill-outline">DATA_SOUVEREIGNTY</div>
+                <h2>Have questions about <br>your business DNA?</h2>
+                <a href="mailto:hello@cronospace.ai" class="footer-mail">hello@cronospace.ai</a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
