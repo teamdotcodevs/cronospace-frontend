@@ -159,7 +159,17 @@
     text-align: center;
 }
 
+.contact-detail {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+}
 
+.contact-detail a {
+    text-decoration: none;
+    color: #000;
+}
 
 @media (max-width: 900px) {
     .terms-card {

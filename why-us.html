@@ -12,15 +12,23 @@
     <div class="logo">
         <a href="/index.html">
             <img src="./Images/logoblack.png" alt="Cronospace Logo">
-        </div>
-    </a>
+        </a>
+    </div>
 
     <div class="nav-links" id="navLinks">
         <a href="/#products">Products</a>
         <a href="/about.html">About Us</a>
         <a href="/why-us.html">Why-us</a>
-        <a href="/agent.html#price">Pricing</a>
-        <button style="background-color: #00d285;" class="btn-black" onclick="toggleModal(true)">Get Started</button>
+        <div class="dropdown">
+            <a href="/agent.html#price" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                Pricing <span style="font-size: 0.8rem;">▼</span>
+            </a>
+            <div class="dropdown-menu" id="pricingDropdown">
+                <a href="/crm.html" class="dropdown-item">Crono CRM</a>
+                <a href="/agent.html#price" class="dropdown-item">Crono Presale</a>
+            </div>
+        </div>
+        <button style="background-color: #00d285;" class="btn-black" onclick="toggleModal(true)">Book Demo</button>
     </div>
 
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -229,11 +237,11 @@
             <div class="action-row">
                 <button class="btn-demo-white" onclick="toggleModal(true)">Book a Demo</button>
                 <div class="divider-v"></div>
-                <a href="https://wa.me/YOUR_NUMBER?text=Hi%20Crono%20Team,%20I'd%20like%20to%20learn%20more%20about%20your%20AI%20solutions." class="whatsapp-link">
+                <a href="https://wa.me/919446381587?text=Hi%20Crono%20Team,%20I'd%20like%20to%20learn%20more%20about%20your%20AI%20solutions." class="whatsapp-link">
                     <span class="wa-icon">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.408 0 12.044c0 2.123.554 4.197 1.604 6.04L0 24l6.112-1.608a11.845 11.845 0 005.934 1.586h.005c6.635 0 12.046-5.409 12.05-12.046a11.808 11.808 0 00-3.535-8.423z"/></svg>
                     </span>
-                    Connect via WhatsApp
+                    Connect With Our Expert
                 </a>
             </div>
         </div>
@@ -328,8 +336,19 @@
 
             <div class="footer-links">
                 <h4 class="footer-head">Connect</h4>
-                <p class="contact-detail">hello@cronospace.ai</p>
-                <p class="contact-detail">+91 7306096088</p>
+                <p class="contact-detail"><a href="mailto:hello@prospello.in">hello@prospello.in</a></p>
+                <p class="contact-detail">
+                    <a href="tel:+919446381587">+91 9446381587</a>
+                </p>
+                <p class="contact-detail">London <br>
+                    Bizniz Point, Broadway, Stratford London<br>
+                    United Kingdom</p>
+                <p class="contact-detail">Bangalore <br>
+                    Sector 3, HSR Layout,<br>
+                    Bangalore, India</p>
+                <p class="contact-detail">Kerala <br>
+                    Hilite Business park,calicut<br>
+                    Kerala, India.</p>
                 <p class="contact-detail">Bangalore, India</p>
             </div>
         </div>

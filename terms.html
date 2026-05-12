@@ -6,7 +6,7 @@
     <title>Terms of Service | Cronospace OS</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="terms.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
 </head>
 <body class="studio-canvas">
 
@@ -14,15 +14,23 @@
     <div class="logo">
         <a href="/index.html">
             <img src="./Images/logoblack.png" alt="Cronospace Logo">
-        </div>
-    </a>
+        </a>
+    </div>
 
     <div class="nav-links" id="navLinks">
         <a href="/#products">Products</a>
         <a href="/about.html">About Us</a>
         <a href="/why-us.html">Why-us</a>
-        <a href="/agent.html#price">Pricing</a>
-        <button style="background-color: #00d285;" class="btn-black" onclick="toggleModal(true)">Get Started</button>
+        <div class="dropdown">
+            <a href="/agent.html#price" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                Pricing <span style="font-size: 0.8rem;">▼</span>
+            </a>
+            <div class="dropdown-menu" id="pricingDropdown">
+                <a href="/crm.html" class="dropdown-item">Crono CRM</a>
+                <a href="/agent.html#price" class="dropdown-item">Crono Presale</a>
+            </div>
+        </div>
+        <button style="background-color: #00d285;" class="btn-black" onclick="toggleModal(true)">Book Demo</button>
     </div>
 
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -120,8 +128,19 @@
 
             <div class="footer-links">
                 <h4 class="footer-head">Connect</h4>
-                <p class="contact-detail">hello@cronospace.ai</p>
-                <p class="contact-detail">+91 7306096088</p>
+                <p class="contact-detail"><a href="mailto:hello@prospello.in">hello@prospello.in</a></p>
+                <p class="contact-detail">
+                    <a href="tel:+919446381587">+91 9446381587</a>
+                </p>
+                <p class="contact-detail">London <br>
+                    Bizniz Point, Broadway, Stratford London<br>
+                    United Kingdom</p>
+                <p class="contact-detail">Bangalore <br>
+                    Sector 3, HSR Layout,<br>
+                    Bangalore, India</p>
+                <p class="contact-detail">Kerala <br>
+                    Hilite Business park,calicut<br>
+                    Kerala, India.</p>
                 <p class="contact-detail">Bangalore, India</p>
             </div>
         </div>

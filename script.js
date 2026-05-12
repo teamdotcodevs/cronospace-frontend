@@ -1,27 +1,124 @@
 document.addEventListener("DOMContentLoaded", () => {
     const path = document.querySelector("#scroll-path");
-    const pathLength = path.getTotalLength();
+    
+    // Only run path animation if scroll-path element exists
+    if (path) {
+        const pathLength = path.getTotalLength();
 
-    // Prepare path for animation
-    path.style.strokeDasharray = pathLength;
-    path.style.strokeDashoffset = pathLength;
+        // Prepare path for animation
+        path.style.strokeDasharray = pathLength;
+        path.style.strokeDashoffset = pathLength;
 
-    window.addEventListener("scroll", () => {
-        const section = document.querySelector(".onboarding-staggered");
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        
-        // Trigger drawing slightly before section enters middle of screen
-        const scrollPercent = (window.scrollY - (sectionTop - window.innerHeight / 2)) / sectionHeight;
-        
-        const draw = pathLength * Math.max(0, Math.min(1, scrollPercent));
-        path.style.strokeDashoffset = pathLength - draw;
-    });
+        window.addEventListener("scroll", () => {
+            const section = document.querySelector(".onboarding-staggered");
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                // Trigger drawing slightly before section enters middle of screen
+                const scrollPercent = (window.scrollY - (sectionTop - window.innerHeight / 2)) / sectionHeight;
+                
+                const draw = pathLength * Math.max(0, Math.min(1, scrollPercent));
+                path.style.strokeDashoffset = pathLength - draw;
+            }
+        });
+    }
+
+    // Initialize Testimonials Pagination
+    initTestimonialsPagination();
 });
+
+// Testimonials Pagination Functionality
+function initTestimonialsPagination() {
+    const pages = document.querySelectorAll('.testimonial-page');
+    const dots = document.querySelectorAll('.pagination-dot');
+    let currentPage = 1;
+    let autoRotateInterval;
+
+    // Show first page initially
+    showPage(1);
+
+    // Add click handlers to dots
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const pageNum = parseInt(dot.dataset.page);
+            showPage(pageNum);
+            resetAutoRotate();
+        });
+    });
+
+    // Auto-rotate functionality
+    function startAutoRotate() {
+        autoRotateInterval = setInterval(() => {
+            currentPage = currentPage >= pages.length ? 1 : currentPage + 1;
+            showPage(currentPage);
+        }, 5000); // Change page every 5 seconds
+    }
+
+    function resetAutoRotate() {
+        clearInterval(autoRotateInterval);
+        startAutoRotate();
+    }
+
+    function showPage(pageNum) {
+        // Hide all pages
+        pages.forEach(page => {
+            page.classList.remove('active', 'prev');
+        });
+
+        // Remove active class from all dots
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Show selected page
+        const targetPage = document.querySelector(`.testimonial-page[data-page="${pageNum}"]`);
+        const targetDot = document.querySelector(`.pagination-dot[data-page="${pageNum}"]`);
+        
+        if (targetPage && targetDot) {
+            // Mark previous page
+            const prevPage = document.querySelector('.testimonial-page.active');
+            if (prevPage) {
+                prevPage.classList.add('prev');
+                setTimeout(() => prevPage.classList.remove('prev'), 500);
+            }
+
+            targetPage.classList.add('active');
+            targetDot.classList.add('active');
+            currentPage = pageNum;
+        }
+    }
+
+    // Start auto-rotation
+    startAutoRotate();
+
+    // Pause auto-rotation on hover
+    const wrapper = document.querySelector('.testimonials-wrapper');
+    if (wrapper) {
+        wrapper.addEventListener('mouseenter', () => clearInterval(autoRotateInterval));
+        wrapper.addEventListener('mouseleave', startAutoRotate);
+    }
+}
+
+// Read More functionality for testimonials
+function toggleReadMore(button) {
+    const testimonialText = button.previousElementSibling;
+    const isExpanded = testimonialText.classList.contains('expanded');
+    
+    if (isExpanded) {
+        testimonialText.classList.remove('expanded');
+        button.textContent = 'Read More';
+    } else {
+        testimonialText.classList.add('expanded');
+        button.textContent = 'Read Less';
+    }
+}
 
 
 function toggleModal(isVisible) {
     const modal = document.getElementById('demoModal');
+    if (!modal) return;
+
     if (isVisible) {
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Lock scrolling
@@ -41,37 +138,40 @@ window.addEventListener('click', (e) => {
 
 // Form Submission Feedback
 const leadForm = document.getElementById('leadForm');
-leadForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const submitBtn = this.querySelector('.btn-submit-black');
-    const originalText = submitBtn.innerText;
-    
-    // UI Feedback
-    submitBtn.innerText = "SENDING...";
-    submitBtn.disabled = true;
-
-    // Simulate an API call
-    setTimeout(() => {
-        submitBtn.style.background = "#00d285";
-        submitBtn.style.color = "#000";
-        submitBtn.innerText = "SUCCESS!";
+if (leadForm) {
+    leadForm.addEventListener('submit', function(e) {
+        e.preventDefault();
         
+        const submitBtn = this.querySelector('.btn-submit-black');
+        const originalText = submitBtn.innerText;
+        
+        // UI Feedback
+        submitBtn.innerText = "SENDING...";
+        submitBtn.disabled = true;
+
+        // Simulate an API call
         setTimeout(() => {
-            toggleModal(false);
-            leadForm.reset();
-            submitBtn.innerText = originalText;
-            submitBtn.style.background = "#000";
-            submitBtn.style.color = "#fff";
-            submitBtn.disabled = false;
-        }, 1500);
-    }, 1000);
-});
+            submitBtn.style.background = "#00d285";
+            submitBtn.style.color = "#000";
+            submitBtn.innerText = "SUCCESS!";
+            
+            setTimeout(() => {
+                toggleModal(false);
+                leadForm.reset();
+                submitBtn.innerText = originalText;
+                submitBtn.style.background = "#000";
+                submitBtn.style.color = "#fff";
+                submitBtn.disabled = false;
+            }, 1500);
+        }, 1000);
+    });
+}
 
 // Sync Date/Time Text
 function syncDisplay(inputId, displayId, fallback) {
     const input = document.getElementById(inputId);
     const display = document.getElementById(displayId);
+    if (!input || !display) return;
     
     input.addEventListener('change', () => {
         if (input.value) {
@@ -87,18 +187,22 @@ syncDisplay('date-input', 'date-display', 'Select Date');
 syncDisplay('time-input', 'time-display', 'Select Time');
 
 // Success Message logic remains similar but with added flare
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = this.querySelector('.btn-black-glow');
-    btn.innerHTML = "<span>details Sended..</span>";
-    
-    setTimeout(() => {
-        btn.innerHTML = "<span> Thank You!. Our team will connect You On the time you provided</span>";
-        btn.style.background = "#00d285";
-        // Close modal after success
-        setTimeout(() => toggleModal(false), 4000);
-    }, 1500);
-});
+if (leadForm) {
+    leadForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('.btn-black-glow');
+        if (!btn) return;
+
+        btn.innerHTML = "<span>details Sended..</span>";
+        
+        setTimeout(() => {
+            btn.innerHTML = "<span> Thank You!. Our team will connect You On the time you provided</span>";
+            btn.style.background = "#00d285";
+            // Close modal after success
+            setTimeout(() => toggleModal(false), 4000);
+        }, 1500);
+    });
+}
 
 
 
@@ -119,9 +223,18 @@ function switchPricing() {
 }
 
 
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = document.getElementById('pricingDropdown');
+    if (!dropdown) return;
+    
+    dropdown.classList.toggle('show');
+}
+
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     const menuToggle = document.querySelector('.menu-toggle');
+    if (!navLinks || !menuToggle) return;
     
     navLinks.classList.toggle('active');
     menuToggle.classList.toggle('open');
@@ -133,3 +246,26 @@ function toggleMenu() {
         document.body.style.overflow = 'auto';
     }
 }
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const dropdown = document.getElementById('pricingDropdown');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    
+    if (dropdown && dropdown.classList.contains('show') && 
+        !dropdown.contains(e.target) && !dropdownToggle.contains(e.target)) {
+        dropdown.classList.remove('show');
+    }
+});
+
+// Close menu when clicking on nav links (except Book Demo button and dropdown toggles)
+document.addEventListener('click', function(e) {
+    const navLinks = document.getElementById('navLinks');
+    
+    if (navLinks && navLinks.classList.contains('active') && 
+        e.target.tagName === 'A' && 
+        !e.target.closest('.btn-black') && 
+        !e.target.closest('.dropdown-toggle')) {
+        toggleMenu();
+    }
+});
