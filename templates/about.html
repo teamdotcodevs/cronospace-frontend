@@ -11,8 +11,8 @@
 <main>
   <section class="hero-landing">
     <div class="hero-background">
-      <div class="gradient-orb orb-1"></div>
-      <div class="gradient-orb orb-2"></div>
+      {% comment %} <div class="gradient-orb orb-1"></div> {% endcomment %}
+      {% comment %} <div class="gradient-orb orb-2"></div> {% endcomment %}
       <div class="grid-pattern"></div>
     </div>
 
@@ -105,46 +105,51 @@
   <section class="corporate-anchor">
     <div class="container">
       <div class="anchor-grid">
-        <div class="grid-col col-logo">
-          <div class="impact-logo-frame">
-            <img
-              src="{% static 'images/dotcologo lighttheme.png' %}"
-              alt="Crono"
-              class="studio-logo-img"
-            />
-            <div class="frame-decor"></div>
-          </div>
-        </div>
         <div class="anchor-card">
-          <div class="card-pill">PARENT_ENTITY</div>
-          <h2>Powered by <br />Dotco Nextgen.</h2>
-          <p>
-           Crono is an AI first CRM and Presales Automation platform developed to help modern businesses manage, engage, and convert leads more intelligently. Unlike traditional CRM systems that only store customer data, Crono combines advanced AI technology with automation to streamline lead engagement, client management, sales operations, and team performance within a single ecosystem.
-           At the core of the platform is the Crono Presales AI Agent, an intelligent AI driven system designed to automate lead interaction, qualification, follow ups, and customer engagement processes. This enables businesses to respond faster, improve conversion rates, and reduce manual workload while maintaining a personalized customer experience.
-          </p>
+          <div class="card-content-wrapper">
+            <div class="content-section">
+              <div class="card-pill">PARENT_ENTITY</div>
+              <h2>Powered by <br />Dotco Nextgen.</h2>
+              <p>
+               Crono is an AI first CRM and Presales Automation platform developed to help modern businesses manage, engage, and convert leads more intelligently. Unlike traditional CRM systems that only store customer data, Crono combines advanced AI technology with automation to streamline lead engagement, client management, sales operations, and team performance within a single ecosystem.
+               At the core of the platform is the Crono Presales AI Agent, an intelligent AI driven system designed to automate lead interaction, qualification, follow ups, and customer engagement processes. This enables businesses to respond faster, improve conversion rates, and reduce manual workload while maintaining a personalized customer experience.
+              </p>
+            </div>
+            <div class="logo-section">
+              <div class="impact-logo-frame">
+                <img
+                  src="{% static 'images/dotcologo lighttheme.png' %}"
+                  alt="Crono"
+                  class="studio-logo-img"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="anchor-grid">
-        <div class="grid-col col-logo">
-          <div class="impact-logo-frame">
-            <img
-              src="{% static 'images/dotcologo lighttheme.png' %}"
-              alt="Crono"
-              class="studio-logo-img"
-            />
-            <div class="frame-decor"></div>
-            <div class="corner-status">NODE_STABLE</div>
-          </div>
-        </div>
         <div class="anchor-card">
-          <div class="card-pill">PARENT_ENTITY</div>
-          <h2>Powered by <br />Dotco Nextgen.</h2>
-          <p>
-           Crono is a product of Prospello Technology, a technology driven company focused on building innovative AI and business automation solutions for the next generation of enterprises and startups.
-          </p>
+          <div class="card-content-wrapper">
+            <div class="content-section">
+              <div class="card-pill">PARENT_ENTITY</div>
+              <h2>Powered by <br />Dotco Nextgen.</h2>
+              <p>
+               Crono is a product of Prospello Technology, a technology driven company focused on building innovative AI and business automation solutions for the next generation of enterprises and startups.
+              </p>
+            </div>
+            <div class="logo-section">
+              <div class="impact-logo-frame">
+                <img
+                  src="{% static 'images/prospello.png' %}"
+                  alt="Crono"
+                  class="studio-logo-img"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
