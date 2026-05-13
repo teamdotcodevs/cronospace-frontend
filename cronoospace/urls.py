@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from web.views import home, about, agent, crm, why_us, privacy, terms
+from web.views import home, about, agent, crm, why_us, privacy, terms, submit_demo_lead
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -13,6 +13,7 @@ urlpatterns = [
     path('why-us/', why_us, name='why_us'),
     path('privacy/', privacy, name='privacy'),
     path('terms/', terms, name='terms'),
+    path('submit-demo-lead/', submit_demo_lead, name='submit_demo_lead'),
 ]
 
 if settings.DEBUG:
