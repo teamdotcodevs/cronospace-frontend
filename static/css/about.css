@@ -2033,3 +2033,9 @@ body {
         max-width: 100%;
     }
 }
+:root {
+    --mint: #00d285;
+    --dark: #0a0f0d;
+    --gray: #64748b;
+    --border: #f1f5f9;
+}
