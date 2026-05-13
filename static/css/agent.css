@@ -2520,6 +2520,9 @@ n.extra-bold {
     color: #999;
     margin-bottom: 15px;
 }
+.scheduler-header svg {
+    flex-shrink: 0;
+}
 
 .scheduler-inputs {
     display: grid;
@@ -2559,6 +2562,9 @@ n.extra-bold {
     gap: 12px;
     cursor: pointer;
     transition: 0.3s;
+}
+.btn-black-glow svg {
+    flex-shrink: 0;
 }
 
 .btn-black-glow:hover {
