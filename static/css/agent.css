@@ -2458,6 +2458,12 @@ n.extra-bold {
     position: relative;
 }
 
+.modal-header p {
+    font-size: 19.2px;
+    margin: 0px 0px 40px;
+    color: #64748b;
+}
+
 /* Floating Label Logic */
 .field {
     position: relative;

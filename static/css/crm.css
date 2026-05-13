@@ -1,6 +1,6 @@
 :root {
     --mint: #00d285;
-    --dark: #000000;
+    --dark: #121212;
     --light: #ffffff;
     --border: #000000;
     --gray: #64748b;
@@ -1622,6 +1622,12 @@ svg {
     width: 95%;
     max-width: 550px;
     position: relative;
+}
+
+.modal-header p {
+    font-size: 19.2px;
+    margin: 0px 0px 40px;
+    color: #64748b;
 }
 
 /* Floating Label Logic */
