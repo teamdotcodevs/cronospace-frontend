@@ -1598,6 +1598,9 @@ p { font-size: 1.2rem; color: var(--gray); max-width: 100%; margin-bottom: 40px;
     color: #999;
     margin-bottom: 15px;
 }
+.scheduler-header svg {
+    flex-shrink: 0;
+}
 
 .scheduler-inputs {
     display: grid;
@@ -1637,6 +1640,9 @@ p { font-size: 1.2rem; color: var(--gray); max-width: 100%; margin-bottom: 40px;
     gap: 12px;
     cursor: pointer;
     transition: 0.3s;
+}
+.btn-black-glow svg {
+    flex-shrink: 0;
 }
 
 .btn-black-glow:hover {
@@ -2326,3 +2332,6 @@ p { font-size: 1.2rem; color: var(--gray); max-width: 100%; margin-bottom: 40px;
         max-height: 50px;
     }
 }
+
+
+
