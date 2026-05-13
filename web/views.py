@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
-from .models import DemoLead
+from .models import Lead
 
 def home(request):
     return render(request, 'index.html')
@@ -35,7 +35,7 @@ def submit_demo_lead(request):
         preferred_date = request.POST.get('preferred_date')
         preferred_time = request.POST.get('preferred_time')
 
-        demo_lead = DemoLead.objects.create(
+        demo_lead = Lead.objects.create(
             user_name=user_name,
             business_type=business_type,
             user_email=user_email,

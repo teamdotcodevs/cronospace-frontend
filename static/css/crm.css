@@ -1875,6 +1875,15 @@ svg {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 0.9rem;
+    border: none;
+    padding: 22px 50px;
+    border-radius: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);    
 }
 
 .wa-icon {

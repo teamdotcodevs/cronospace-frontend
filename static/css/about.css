@@ -897,6 +897,7 @@ body {
     line-height: 0.95;
     color: white;
     margin: 20px 0 0;
+    text-align: center;
 }
 
 .anchor-accent {
@@ -904,12 +905,6 @@ body {
     -webkit-text-stroke: 2px var(--mint);
     position: relative;
     display: inline-block;
-    transition: all 0.4s ease;
-}
-
-.anchor-accent:hover {
-    color: var(--mint);
-    -webkit-text-stroke: 0;
 }
 
 /* Cards Stack */
@@ -927,26 +922,17 @@ body {
     border-radius: 2px;
     position: relative;
     overflow: hidden;
-    border: 1px solid #e8e8e8;
+    border: none;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.anchor-card-v2:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.12);
-    border-color: #0a0a0a;
-}
 
 /* Dark variant */
 .anchor-card-dark {
-    background: #0a0a0a;
-    border-color: #222;
+    background:black;
+    border: none;
 }
 
-.anchor-card-dark:hover {
-    border-color: var(--mint);
-    box-shadow: 0 40px 80px -20px rgba(0, 210, 133, 0.15);
-}
 
 .anchor-card-dark .card-v2-title {
     color: #ffffff;
@@ -958,7 +944,7 @@ body {
 
 .anchor-card-dark .card-v2-tag {
     color: #6b7280;
-    border-color: #333;
+    border: none;
 }
 
 .anchor-card-dark .tag-dot {
@@ -968,7 +954,7 @@ body {
 
 .anchor-card-dark .card-v2-status {
     color: var(--mint);
-    border-color: rgba(0, 210, 133, 0.3);
+    border: none;
     background: rgba(0, 210, 133, 0.05);
 }
 
@@ -986,7 +972,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
 
 .card-v2-tag {
     display: inline-flex;
@@ -1000,7 +988,7 @@ body {
     color: #999;
     margin-bottom: 28px;
     padding: 8px 14px;
-    border: 1px solid #e8e8e8;
+    border: none;
     border-radius: 3px;
     width: fit-content;
 }
@@ -1057,7 +1045,7 @@ body {
     color: #0a0a0a;
     margin-top: 28px;
     padding: 8px 16px;
-    border: 1px solid #e8e8e8;
+    border: none;
     border-radius: 3px;
     width: fit-content;
 }
@@ -1077,12 +1065,12 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    border-left: 1px solid #f0f0f0;
+    border-left: none;
     overflow: hidden;
 }
 
 .anchor-card-dark .card-v2-visual {
-    border-left-color: #222;
+    border-left: none;
 }
 
 .visual-frame {
@@ -1120,9 +1108,6 @@ body {
     transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.anchor-card-v2:hover .card-v2-logo {
-    transform: scale(1.08);
-}
 
 /* Grid Lines Decoration */
 .visual-grid-lines {
@@ -1135,7 +1120,7 @@ body {
 }
 
 .visual-grid-lines span {
-    border-right: 1px solid rgba(0, 0, 0, 0.03);
+    border-right: none;
 }
 
 .visual-grid-lines span:last-child {
@@ -1143,7 +1128,7 @@ body {
 }
 
 .visual-grid-dark span {
-    border-right-color: rgba(255, 255, 255, 0.04);
+    border-right: none;
 }
 
 /* Bottom Accent Bar */
@@ -1157,9 +1142,6 @@ body {
     transition: width 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.anchor-card-v2:hover .card-v2-border-accent {
-    width: 100%;
-}
 
 .card-v2-border-accent-dark {
     background: linear-gradient(90deg, var(--mint), #00ffaa, var(--mint));
@@ -1191,12 +1173,12 @@ body {
 
     .card-v2-visual {
         border-left: none;
-        border-top: 1px solid #f0f0f0;
+        border-top: none;
         padding: 50px 40px;
     }
 
     .anchor-card-dark .card-v2-visual {
-        border-top-color: #222;
+        border-top: none;
     }
 }
 
@@ -1396,6 +1378,15 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 0.9rem;
+    border: none;
+    padding: 22px 50px;
+    border-radius: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);    
 }
 
 .wa-icon {
@@ -2152,4 +2143,46 @@ body {
   .hero-main {
     margin-bottom: 150px;
   }
+}
+
+/* Container for the specific card content */
+.centered-block {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;   /* Centers horizontally in flex */
+    justify-content: center !important;
+    text-align: center !important;    /* Centers text */
+    padding: 80px 40px !important;    /* Adjusted padding for a cleaner look */
+    width: 100%;
+}
+
+/* Specific styling for the logo to ensure it's the right size and centered */
+.card-v2-logo-centered {
+    width: 320px;          /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 30px;   /* Space between logo and paragraph */
+    display: block;
+}
+
+/* Ensure the description text doesn't span the full width of the screen */
+.centered-block .card-v2-desc {
+    max-width: 700px;      /* Keeps the line length readable */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #9ca3af;        /* Soft gray for readability on black */
+}
+
+/* Override the previous card-v2-inner grid if it still exists */
+.anchor-card-dark .card-v2-inner {
+    display: block !important; /* Disables the 2-column grid */
+}
+
+/* Re-center the headline just in case */
+.anchor-headline {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
 }

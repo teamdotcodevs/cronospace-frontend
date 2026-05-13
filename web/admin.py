@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import DemoLead
+from .models import Lead
 
 # Register your models here.
-@admin.register(DemoLead)
+@admin.register(Lead)
 class DemoLeadAdmin(admin.ModelAdmin):
     list_display = ['user_name', 'business_type', 'user_email', 'preferred_date', 'preferred_time', 'created_at']
     list_filter = ['business_type', 'created_at']
