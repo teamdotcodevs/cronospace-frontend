@@ -9,7 +9,48 @@
 {% endblock %}
 
 {% block content %}
-<section class="crm-hero-new">
+
+<section class="hero-main">
+  <div class="grid-overlay"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">NEURAL CRM ARCHITECTUR</div>
+      <h1 class="hero-title">
+        Choose the Right <br />
+        <span class="accent-text">Crono CRM Model</span>
+      </h1>
+      <p class="hero-subtitle">
+        Whether you need a fully customized AI powered CRM built exclusively for your business or a ready to launch subscription model, Crono offers flexible solutions designed for every stage of growth.
+
+      </p>
+
+      <div class="hero-cta-group">
+        <button
+          class="btn-primary-glow"
+          onclick="
+            document  
+              .querySelector('.studio-cta')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Book Free Demo
+        </button>
+        <button
+          class="btn-secondary"
+          onclick="
+            window.open(
+              'https://wa.me/919446381587?text=Hi%2C+want+to+know+more+about+your+Crono+AI-first+CRM.',
+              '_blank',
+            )
+          "
+        >
+          <span>Chat with The Expert</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+{% comment %} <section class="crm-hero-new">
   <div class="hero-background">
     <div class="animated-grid"></div>
     <div class="gradient-orb"></div>
@@ -29,9 +70,6 @@
         </h1>
 
         <p class="hero-description">
-          {% comment %} Transform your sales pipeline with intelligent automation. Crono
-          learns your business patterns, predicts outcomes, and executes
-          strategies while you focus on growth. {% endcomment %}
           Whether you need a fully customized AI powered CRM built exclusively for your business or a ready to launch subscription model, Crono offers flexible solutions designed for every stage of growth.
         </p>
 
@@ -56,77 +94,10 @@
         </div>
       </div>
 
-      <div class="hero-dashboard-new">
-        <div class="dashboard-header">
-          <div class="status-indicator active"></div>
-          <span class="dashboard-title">LIVE CRM DASHBOARD</span>
-          <div class="connection-status">
-            <span class="status-dot"></span>
-            <span>ONLINE</span>
-          </div>
-        </div>
 
-        <div class="metrics-grid">
-          <div class="metric-card">
-            <div class="metric-icon">📊</div>
-            <div class="metric-value">$2.4M</div>
-            <div class="metric-label">Pipeline Value</div>
-            <div class="metric-change positive">+12%</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon">⚡</div>
-            <div class="metric-value">0.8s</div>
-            <div class="metric-label">Avg Response</div>
-            <div class="metric-change positive">-45%</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon">🎯</div>
-            <div class="metric-value">29%</div>
-            <div class="metric-label">Conversion Rate</div>
-            <div class="metric-change positive">+7%</div>
-          </div>
-        </div>
-
-        <div class="activity-feed">
-          <div class="feed-header">
-            <span>REAL-TIME ACTIVITY</span>
-            <div class="pulse-indicator"></div>
-          </div>
-          <div class="feed-items">
-            <div class="feed-item">
-              <div class="item-dot"></div>
-              <span class="item-text">New lead scored: High Priority</span>
-              <span class="item-time">2s ago</span>
-            </div>
-            <div class="feed-item">
-              <div class="item-dot mint"></div>
-              <span class="item-text">AI follow-up scheduled</span>
-              <span class="item-time">15s ago</span>
-            </div>
-            <div class="feed-item">
-              <div class="item-dot"></div>
-              <span class="item-text">Deal stage updated: Closing</span>
-              <span class="item-time">1m ago</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="performance-chart">
-          <div class="chart-bars">
-            <div class="chart-bar" style="height: 60%"></div>
-            <div class="chart-bar" style="height: 80%"></div>
-            <div class="chart-bar" style="height: 45%"></div>
-            <div class="chart-bar" style="height: 90%"></div>
-            <div class="chart-bar" style="height: 70%"></div>
-            <div class="chart-bar" style="height: 85%"></div>
-            <div class="chart-bar" style="height: 95%"></div>
-          </div>
-          <div class="chart-label">Weekly Performance</div>
-        </div>
-      </div>
     </div>
   </div>
-</section>
+</section> {% endcomment %}
 
 
 <section class="onboarding-staggered" id="onboarding-trigger">
