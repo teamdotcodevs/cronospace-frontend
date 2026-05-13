@@ -707,8 +707,8 @@ body {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Darken background */
-    backdrop-filter: blur(10px);    /* Modern glass effect */
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -789,13 +789,13 @@ body {
     color: #000;
 }
 
-.close-btn {
+/* .close-btn {
     position: absolute;
     top: 25px; right: 30px;
     font-size: 32px;
     cursor: pointer;
     line-height: 1;
-}
+} */
 
 /* WhatsApp Icon Styling */
 .wa-icon {
