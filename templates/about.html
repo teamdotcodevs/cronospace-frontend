@@ -9,10 +9,53 @@
 
 {% block content %}
 <main>
-  <section class="hero-landing">
+
+  <section class="hero-main">
+  <div class="grid-overlay"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">AI-Powered Sales Revolution</div>
+      <h1 class="hero-title">
+        Automating Every Sector<br />
+        <span class="accent-text"> Space With Logic</span>
+      </h1>
+      <p class="hero-subtitle">
+        Cronospace is a business automation startup re-
+engineering the DNA of modern commerce. We
+bridge the gap between human strategy and
+autonomous execution through brilliant
+engineering and high-density Al.
+      </p>
+
+      <div class="hero-cta-group">
+        <button
+          class="btn-primary-glow"
+          onclick="
+            document
+              .querySelector('.studio-cta')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Book Free Demo
+        </button>
+        <button
+          class="btn-secondary"
+          onclick="
+            window.open(
+              'https://wa.me/919446381587?text=Hi%2C+want+to+know+more+about+Crono+Enterprise+Suite.',
+              '_blank',
+            )
+          "
+        >
+          <span>Chat with The Expert</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+  {% comment %} <section class="hero-landing">
     <div class="hero-background">
-      {% comment %} <div class="gradient-orb orb-1"></div> {% endcomment %}
-      {% comment %} <div class="gradient-orb orb-2"></div> {% endcomment %}
+      
       <div class="grid-pattern"></div>
     </div>
 
@@ -63,9 +106,9 @@
             <div class="logo-placeholder">AI Solutions</div>
           </div>
         </div>
-      </div>
+      </div> {% endcomment %}
 
-      <div class="hero-visual">
+      {% comment %} <div class="hero-visual">
         <div class="dashboard-preview">
           <div class="dashboard-header">
             <div class="dashboard-dots">
@@ -98,92 +141,35 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>  {% endcomment %}
     </div>
   </section>
 
-  <section class="corporate-anchor">
-    <div class="anchor-noise"></div>
-    <div class="container">
-      <div class="anchor-section-header">
-        <span class="anchor-eyebrow">The Ecosystem</span>
-        <h2 class="anchor-headline">Built on <span class="anchor-accent">giants.</span></h2>
-      </div>
+  <section class="corporate-anchor" style="background-color:black">
+  <div class="anchor-noise"></div>
+  <div class="container">
+    <div class="anchor-section-header">
+      <h2 class="anchor-headline">Built on <span class="anchor-accent">giants.</span></h2>
+    </div>
 
-      <div class="anchor-cards-stack">
-        <!-- Card 1: Dotco Nextgen -->
-        <div class="anchor-card-v2">
-          <div class="card-v2-inner">
-            <div class="card-v2-content">
-              <div class="card-v2-tag">
-                <span class="tag-dot"></span>
-                <span>Parent Entity</span>
-              </div>
-              <h3 class="card-v2-title">Dotco Nextgen</h3>
-              <p class="card-v2-desc">
-                Crono is an AI-first CRM and Presales Automation platform built to help modern businesses manage, engage, and convert leads more intelligently. Combining advanced AI with automation to streamline lead engagement, client management, and sales operations within a single ecosystem.
-              </p>
-              <p class="card-v2-desc card-v2-desc-secondary">
-                At its core is the Crono Presales AI Agent — an intelligent system designed to automate lead interaction, qualification, follow-ups, and customer engagement. Faster responses. Higher conversions. Less manual work.
-              </p>
-              <div class="card-v2-status">
-                <span class="status-live-dot"></span>
-                <span>ACTIVE PARTNERSHIP</span>
-              </div>
-            </div>
-            <div class="card-v2-visual">
-              <div class="visual-frame">
-                <div class="frame-glow"></div>
-                <img
-                  src="{% static 'images/dotcologo lighttheme.png' %}"
-                  alt="Dotco Nextgen"
-                  class="card-v2-logo"
-                />
-              </div>
-              <div class="visual-grid-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-          <div class="card-v2-border-accent"></div>
+    <div class="anchor-cards-stack">
+      <!-- Centered Logo and Description -->
+      <div class="anchor-card-v2 anchor-card-dark">
+        <div class="card-v2-content centered-block">
+          <img
+            src="{% static 'images/logo-removebg-preview.png' %}"
+            alt="Prospello Technology"
+            class="card-v2-logo-centered"
+          />
+          <p class="card-v2-desc">
+            Crono is a product of Prospello Technology, a technology-driven company focused on building innovative AI and business automation solutions for the next generation of enterprises and startups.
+          </p>
         </div>
-
-        <!-- Card 2: Prospello Technology -->
-        <div class="anchor-card-v2 anchor-card-dark">
-          <div class="card-v2-inner">
-            <div class="card-v2-content">
-              <div class="card-v2-tag">
-                <span class="tag-dot"></span>
-                <span>Parent Entity</span>
-              </div>
-              <h3 class="card-v2-title">Prospello Technology</h3>
-              <p class="card-v2-desc">
-                Crono is a product of Prospello Technology, a technology-driven company focused on building innovative AI and business automation solutions for the next generation of enterprises and startups.
-              </p>
-              <div class="card-v2-status">
-                <span class="status-live-dot"></span>
-                <span>ACTIVE PARTNERSHIP</span>
-              </div>
-            </div>
-            <div class="card-v2-visual">
-              <div class="visual-frame visual-frame-dark">
-                <div class="frame-glow frame-glow-dark"></div>
-                <img
-                  src="{% static 'images/prospello.png' %}"
-                  alt="Prospello Technology"
-                  class="card-v2-logo"
-                />
-              </div>
-              <div class="visual-grid-lines visual-grid-dark">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-          <div class="card-v2-border-accent card-v2-border-accent-dark"></div>
-        </div>
+        <div class="card-v2-border-accent"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="flagship-audit-v2">
     <div class="container">

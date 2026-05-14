@@ -117,7 +117,8 @@
                 <p>Experience the <span style="color: #00d285;">CRONO</span> that automates your growth.</p>
             </div>
 
-            <form class="studio-form-v2" id="leadForm">
+            <form class="studio-form-v2" id="leadForm" action="/submit-demo-lead/" method="POST">
+                {% csrf_token %}
                 <div class="input-stack">
                     <div class="field">
                         <input type="text" name="user_name" placeholder=" " required>
@@ -141,11 +142,11 @@
                     </div>
                     <div class="scheduler-inputs">
                         <div class="pick-btn" onclick="document.getElementById('date-input').showPicker()">
-                            <input type="date" id="date-input" class="hidden-input">
+                            <input type="date" id="date-input" class="hidden-input" name="preferred_date">
                             <span id="date-display">Select Date</span>
                         </div>
                         <div class="pick-btn" onclick="document.getElementById('time-input').showPicker()">
-                            <input type="time" id="time-input" class="hidden-input">
+                            <input type="time" id="time-input" class="hidden-input" name="preferred_time">
                             <span id="time-display">Select Time</span>
                         </div>
                     </div>
