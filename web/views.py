@@ -7,6 +7,9 @@ from .models import Lead
 def home(request):
     return render(request, 'index.html')
 
+def book_demo(request):
+    return render(request, 'index.html', {'open_modal': True})
+
 def about(request):
     return render(request, 'about.html')
 

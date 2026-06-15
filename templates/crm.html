@@ -455,10 +455,23 @@
 
     <div class="studio-footer">
       <div class="velocity-card">
-        <div class="v-icon">⚡</div>
+        <div class="velocity-gauge">
+          <svg class="velocity-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          <div class="gauge-track">
+            <div class="gauge-fill"></div>
+            <div class="gauge-dot" style="left: 30%;"></div>
+          </div>
+        </div>
         <div class="v-info">
-          <span>DEPLOYMENT VELOCITY</span>
-          <strong>8-26 WORKING DAYS</strong>
+          <span class="v-label">DEPLOYMENT VELOCITY</span>
+          <div class="v-value">
+            <span class="v-range v-range-min">8</span>
+            <span class="v-range-sep">—</span>
+            <span class="v-range v-range-max">26</span>
+            <span class="v-unit">Working Days</span>
+          </div>
         </div>
       </div>
     </div>

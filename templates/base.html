@@ -162,6 +162,13 @@
     {% endblock %}
 
     <script src="{% static 'js/script.js' %}"></script>
+    {% if open_modal %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleModal(true);
+        });
+    </script>
+    {% endif %}
     {% block extra_js %}{% endblock %}
 </body>
 </html>

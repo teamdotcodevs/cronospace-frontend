@@ -1428,17 +1428,131 @@ svg {
 .velocity-card {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 35px;
     background: #000;
     color: #fff;
-    padding: 30px 60px;
+    padding: 28px 50px;
     border-radius: 4px;
     box-shadow: 15px 15px 0px var(--mint);
+    position: relative;
+    overflow: hidden;
 }
 
-.v-icon { font-size: 2rem; }
-.v-info span { display: block; font-size: 10px; font-weight: 900; opacity: 0.5; letter-spacing: 2px; }
-.v-info strong { font-size: 1.8rem; font-weight: 900; color: var(--mint); }
+.velocity-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 210, 133, 0.03) 2px,
+        rgba(0, 210, 133, 0.03) 4px
+    );
+    pointer-events: none;
+}
+
+.velocity-gauge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.velocity-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--mint);
+    animation: velocity-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes velocity-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.15); }
+}
+
+.gauge-track {
+    width: 80px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    position: relative;
+}
+
+.gauge-fill {
+    width: 30%;
+    height: 100%;
+    background: var(--mint);
+    border-radius: 2px;
+    transition: width 0.6s ease;
+}
+
+.gauge-dot {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: var(--mint);
+    border-radius: 50%;
+    animation: gauge-dot-pulse 2s ease-in-out infinite;
+}
+
+@keyframes gauge-dot-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 210, 133, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(0, 210, 133, 0); }
+}
+
+.v-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.v-label {
+    font-size: 10px;
+    font-weight: 900;
+    opacity: 0.5;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
+.v-value {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.v-range {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.v-range-min {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.v-range-max {
+    color: var(--mint);
+    font-size: 2.4rem;
+}
+
+.v-range-sep {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: 100;
+    margin: 0 2px;
+}
+
+.v-unit {
+    font-size: 10px;
+    opacity: 0.4;
+    font-family: monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 4px;
+}
 
 @media (max-width: 768px) {
     .mega-title { font-size: 2.8rem; }
