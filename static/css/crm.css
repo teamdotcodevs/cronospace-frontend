@@ -36,7 +36,12 @@ body {
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--dark);
+    margin-top: 20px;
     margin-bottom: 15px;
+}
+
+.pricing-details h4:first-child {
+    margin-top: 0;
 }
 
 .pricing-details p {
@@ -48,6 +53,52 @@ body {
 .usage-list {
     list-style: none;
     margin-top: 10px;
+}
+
+.price-highlight {
+    margin: 15px 0;
+    padding: 16px 20px;
+    background: #00d285;
+    border-radius: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.price-highlight:hover {
+    transform: scale(1.05);
+}
+
+.price-label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+}
+
+.price-amount {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #000;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.price-currency {
+    font-size: 1rem;
+    vertical-align: super;
+    margin-right: 1px;
+}
+
+.price-suffix {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    font-weight: 500;
 }
 
 .usage-list li {
@@ -1650,9 +1701,9 @@ svg {
 
 .quote-container {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: stretch;
 }
 
 /* THE CONSULT CARD */
